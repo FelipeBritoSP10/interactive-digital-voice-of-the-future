@@ -1,0 +1,1 @@
+const appName = "Voz do Futuro";
