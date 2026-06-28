@@ -16,7 +16,7 @@ O **Voz do Futuro** é uma aplicação web de Comunicação Aumentativa e Altern
 
 ## 💡 Por que isso importa?
 
-Crianças não verbais seja por autismo, paralisia cerebral ou outras condições — possuem mundos internos ricos, mas frequentemente enfrentam a frustração do isolamento por não possuírem um canal de expressão.
+Crianças não verbais seja por autismo, paralisia cerebral ou outras condições possuem mundos internos ricos, mas frequentemente enfrentam a frustração do isolamento por não possuírem um canal de expressão.
 
 * **Autonomia:** A criança ganha o poder de dizer o que precisa (dor, fome, medo).
 * **Vínculo:** Fortalece a relação entre a criança e o cuidador, facilitando o entendimento mútuo.
