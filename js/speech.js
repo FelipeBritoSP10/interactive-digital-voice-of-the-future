@@ -1,12 +1,40 @@
+let voices = [];
+
+function loadVoices() {
+    voices = speechSynthesis.getVoices();
+}
+
+// Inicializa vozes e garante atualização em navegadores como Chrome
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+    speechSynthesis.onvoiceschanged = loadVoices;
+}
+
 function speakMessage(text) {
+    const el = document.getElementById('message');
+    el.textContent = text;
+    el.classList.add('speaking');
 
-  document.getElementById("message").textContent = text;
+    setTimeout(() => {
+        el.classList.remove('speaking');
+    }, 1200);
 
-  const speech = new SpeechSynthesisUtterance(text);
+    speechSynthesis.cancel();
 
-  speech.lang = "pt-BR";
-  speech.rate = 0.9;
+    const utterance = new SpeechSynthesisUtterance(text);
 
-  speechSynthesis.cancel();
-  speechSynthesis.speak(speech);
+    // Prioridade para vozes brasileiras
+    let voice = voices.find(v => v.lang === 'pt-BR') ||
+                voices.find(v => v.lang === 'pt_BR') ||
+                voices.find(v => v.lang.startsWith('pt'));
+
+    if (voice) {
+        utterance.voice = voice;
+    }
+
+    utterance.lang = 'pt-BR';
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+
+    speechSynthesis.speak(utterance);
 }
