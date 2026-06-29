@@ -92,6 +92,22 @@ O **Voz do Futuro** se destaca no mercado de tecnologia assistiva por três pila
 2. Abra com o **Safari**.
 3. Toque no botão **Compartilhar** e selecione **"Adicionar à Tela de Início"**.
 
+## 📥 Como usar com Git
+
+Se você prefere clonar o projeto diretamente do GitHub e rodar localmente:
+
+```bash
+# Clone o repositório
+git clone https://github.com/FelipeBritoSP10/interactive-digital-voice-of-the-future.git
+
+# Entre na pasta do projeto
+cd interactive-digital-voice-of-the-future
+
+# Abra o arquivo principal no navegador
+voz-do-futuro.html
+
+```
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
